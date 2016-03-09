@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponseRedirect
 from .forms import EmailForm, JoinForm
 from .models import Join
 import uuid
@@ -42,7 +43,7 @@ def home(request):
 			new_join_old.ref_id = get_ref_id()
 			new_join_old.ip_address = get_ip(request)
 			new_join_old.save()
-			#redirect to home page
+			return HttpResponseRedirect("")
 	context = {"form": form}
 	template = "home.html"
 	return render(request, template, context)
