@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+
+<p class="title"> ICON(<strong>SENT</strong>) </p>
+
+<h2> Let's talk porn. </h2>
+
+<hr class= "home">
+
+<p> ICON(sent) Entertainment Technologies is leading the way in software development for pornographic content providers. Our mission is to ensure that all peoples featured in widely distributed pornography are fully consenting individuals.
+</p>
+
+<form method="POST" action="">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value='Stay Updated' class='btn btn-primary button' />
+</form>
+
+{% endblock %}
+
+
