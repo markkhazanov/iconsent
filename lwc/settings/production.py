@@ -9,6 +9,9 @@ DATABASES = settings.DATABASES
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+# TODO: sign up for Heroku postgres (think is free)
+# and then set the Heroku config variable appropriately
+# see https://devcenter.heroku.com/articles/heroku-postgresql
 import dj_database_url
 DATABASES['default'] = dj_database_url.config()
 
