@@ -82,3 +82,8 @@ celerybeat-schedule
 
 # Spyder project settings
 .spyderproject
+
+# Ignore local settings. When it is missing
+# we are in production.
+lwc/settings/local.py
+
