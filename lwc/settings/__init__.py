@@ -1,11 +1,8 @@
+import os
+
 from .base import *
 
-try:
+if os.environ.get('PRODUCTION', None):
+	from .production import *
+else:
 	from .local import *
-	live = False
-
-except:
-	live = True
-
-if live:
-	from .product import *

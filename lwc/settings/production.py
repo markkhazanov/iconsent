@@ -11,11 +11,13 @@ DATABASES = settings.DATABASES
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 # TODO: sign up for Heroku postgres (think is free)
 # and then set the Heroku config variable appropriately
-# see https://devcenter.heroku.com/articles/heroku-postgresql
+# see https://devcenter.heroku.com/articles/heroku-postgresqlhe
 import dj_database_url
 DATABASES['default'] = dj_database_url.config()
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 ALLOWED_HOSTS = ['*']
 
