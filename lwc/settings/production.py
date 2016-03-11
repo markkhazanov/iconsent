@@ -21,6 +21,50 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 
 ALLOWED_HOSTS = ['*']
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters': {
+         'require_debug_false': {
+             '()': 'django.utils.log.RequireDebugFalse'
+         }
+     },
+    'handlers': {
+        # Include the default Django email handler for errors
+        # This is what you'd get without configuring logging at all.
+        'mail_admins': {
+            'class': 'django.utils.log.AdminEmailHandler',
+            'level': 'ERROR',
+            'filters': ['require_debug_false'],
+             # But the emails are plain text by default - HTML is nicer
+            'include_html': True,
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        # Again, default Django configuration to email unhandled exceptions
+        'django.request': {
+            'handlers': ['mail_admins'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+        # Might as well log any errors anywhere else in Django
+        'django': {
+            'handlers': ['console'],
+            'level': 'ERROR',
+            'propagate': False,
+        },
+        # Your own app - this assumes all your logger names start with "myapp."
+        'joins': {
+            'handlers': ['console'],
+            'level': 'DEBUG', # Or maybe INFO or WARNING
+            'propagate': False
+        },
+    },
+}
 
 # BASE_DIR= os.path.dirname(os.path.abspath(__file__))
 
