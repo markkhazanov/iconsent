@@ -1,8 +1,32 @@
 
+html{
+	height:100%;
+}
 
 body{
-	background-color: #FDF5D2; /*#FAEBAC */
+	background: url(../img/LA.jpg) no-repeat top center; 
+	background-size: cover;
+	padding: 0px;
+}
+
+/*.otherpage{
+	background-color: #FDF5D2; 
 	padding: 20px;
+}
+
+.homepage{
+	background: url(../img/LA.jpg) no-repeat top center; 
+	background-size: cover;
+	padding: 0px;
+}*/
+
+.logo{
+	display: block;
+	margin: auto;
+	max-width: 700px;
+	width: 80%;
+	margin-top: 10%;
+	margin-bottom: 5px;
 }
 
 h1{
@@ -13,6 +37,7 @@ h1{
 
 }
 
+
 p.title{
 	margin-right: auto;
 	margin-left: auto;
@@ -22,6 +47,19 @@ p.title{
 	margin-top: 50px;
 }
 
+p.introtext{
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: gray;
+	font-size: 220%;
+	margin-left: 1em;
+	margin-right: 1em;
+	/*max-width: 700px;*/
+	margin: 0 auto;
+	margin-bottom: 10px;
+	text-shadow: 0px 2px 1px black;
+}
+
 h2{
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
@@ -29,9 +67,10 @@ h2{
 	font-size: 220%;
 	margin-left: 1em;
 	margin-right: 1em;
-	max-width: 700px;
+	/*max-width: 700px;*/
 	margin: 0 auto;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
+	text-shadow: 0px 2px 1px gray;
 }
 
 form{
@@ -88,8 +127,9 @@ hr.home{
 	background-color: black;
 	margin-left: auto;
 	margin-right: auto;
-	width: 25%;
+	width: 50%;
 	min-width: 200px;
+	box-shadow: 0px 1px 2px gray;
 }
 
 .button{
@@ -99,6 +139,7 @@ hr.home{
 	color: white;
 	size: 200%;
 	font-family: 'Josefin Sans', sans-serif;
+	box-shadow: 0px 2px 2px gray;
 }
 
 .founders{
@@ -153,4 +194,12 @@ hr.home{
 	margin-left: 0em;
 	margin-right: 0em;
 	font-size: 180%;
+}
+
+.icon{
+	display: block;
+	max-width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	width: auto;
 }

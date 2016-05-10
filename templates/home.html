@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-
-<p class="title"> ICON(<strong>SENT</strong>) </p>
-
-<h2> Let's talk porn. </h2>
+{% load staticfiles %}
+<div class="homepage">
+<!--<p class="title"> ICON(<strong>SENT</strong>) </p> -->
+<img class="logo"  src={% static "img/logo_v2.png" %} />
+<!--<h2> Let's talk porn. </h2>-->
 
 <hr class= "home">
 
@@ -16,6 +17,7 @@
 <input type="submit" value='Stay Updated' class='btn btn-primary button' />
 </form>
 
+</div>
 {% endblock %}
 
 

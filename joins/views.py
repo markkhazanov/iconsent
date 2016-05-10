@@ -53,6 +53,11 @@ def about(request):
 	template = "about.html"
 	return render(request, template, context)
 
+def methodology(request):
+	context = {}
+	template = "methodology.html"
+	return render(request, template, context)
+
 def members(request):
 	context = {}
 	template = "members.html"

@@ -4,19 +4,31 @@
 <head>
 {% load staticfiles %}
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="{% static 'js/navbar.js' %}"></script>
+
 <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'css/skeleton.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}" />
 
 </head>
 <body>
-<div class="header">
-	<a href="{% url 'home' %}">Home</a>
-	<a href="{% url 'about' %}">About</a>
-	<a href="{% url 'members' %}">Members</a>
-	<a href="{% url 'contact' %}">Contact Us</a>
-</div>
+	<header>
+	  <button class="hamburger">&#9776;</button>
+	  <button class="cross">&#735;</button>
+	</header>
+
+	<div class="menu">
+	  <ul>
+	    <a href="{% url 'home' %}"><li>Home</li></a>
+			<a href="{% url 'about' %}"><li>About</li></a>
+			<a href="{% url 'methodology' %}"><li>Methodology</li></a>
+			<a href="{% url 'members' %}"><li>Members</li></a>
+			<a href="{% url 'contact' %}"><li>Contact Us</li></a>
+	  </ul>
+	</div> 
 
 {% block content %}
 
@@ -24,3 +36,4 @@
 
 </body>
 </html>
+
