@@ -4,7 +4,8 @@ html{
 }
 
 body{
-	background-color: #FDF5D2; 
+	background-color: #FDF5D2;
+	padding: 0px;
 }
 
 /*.otherpage{
@@ -194,9 +195,9 @@ hr.home{
 	font-size: 180%;
 }
 
-.icon{
+img.icon{
 	display: block;
-	max-width: 200px;
+	max-height: 200px;
 	margin-right: auto;
 	margin-left: auto;
 	width: auto;
