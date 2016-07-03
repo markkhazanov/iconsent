@@ -7,7 +7,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'joins.views.home', name='home'),
     url(r'^about/$', 'joins.views.about', name='about'),
-    url(r'^members/$', 'joins.views.members', name='members'),
+    url(r'^advisors/$', 'joins.views.advisors', name='advisors'),
     url(r'^contact/$', 'joins.views.contact', name='contact'),
     url(r'^methodology/$', 'joins.views.methodology', name='methodology'),
     # url(r'^blog/', include('blog.urls')),

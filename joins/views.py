@@ -58,9 +58,9 @@ def methodology(request):
 	template = "methodology.html"
 	return render(request, template, context)
 
-def members(request):
+def advisors(request):
 	context = {}
-	template = "members.html"
+	template = "advisors.html"
 	return render(request, template, context)
 
 def contact(request):
