@@ -1,105 +1,106 @@
 
 @media screen and (max-device-width: 480px) {
 
-html{
-	height:100%;
-}
+	html{
+		height:100%;
+	}
 
-body{
-	background-color: #FDF5D2;
-	padding: 0px;
-}
+	body{
+		background-color: #FDF5D2;
+		padding: 0px;
+	}
 
-.menu{
-	font-size: 0.8em !important;
-	width:none;
-}
+	.menu{
+		font-size: 0.8em !important;
+		width:none;
+	}
 
-h1{
-	margin: 40px;
-	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 500%;
-}
+	h1{
+		margin: 40px;
+		text-align: center;
+		font-family: 'Josefin Sans', sans-serif;
+		font-size: 500%;
+	}
 
-.logo{
-	display: block;
-	margin: auto;
-	max-width: 800px;
-	width: 80%;
-	margin-top: 10%;
-	margin-bottom: 70px;
-}
+	.logo{
+		display: block;
+		margin: auto;
+		max-width: 800px;
+		width: 80%;
+		margin-top: 10%;
+		margin-bottom: 70px;
+	}
 
-.page, p{
-	font-family: 'Josefin Sans', sans-serif;
-	line-height: 1em;
-	text-align: left;
-	padding: 10px;
-	font-size: 1em;
-	margin-left: 1em;
-	margin-right: 1em;
-}
+	.page, p{
+		font-family: 'Josefin Sans', sans-serif;
+		line-height: 1em;
+		text-align: left;
+		padding: 10px;
+		font-size: 1em;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
 
-form{
-	text-align: center;
-	font-size: 20px;
-}
+	form{
+		text-align: center;
+		font-size: 20px;
+	}
 
-.button{
-	background-color: orange;
-	border: 1px solid orange;
-	font-size: 40px;
-	color: white;
-	size: 200%;
-	font-family: 'Josefin Sans', sans-serif;
-	box-shadow: 0px 5px 10px gray;
-	padding: 10px;
-}
+	.button{
+		background-color: orange;
+		border: 1px solid orange;
+		font-size: 40px;
+		color: white;
+		size: 200%;
+		font-family: 'Josefin Sans', sans-serif;
+		box-shadow: 0px 5px 10px gray;
+		padding: 10px;
+	}
 
-}
-#icon {
-  display: block;
-  float: none;
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
+	}
+	#icon {
+	  display: block;
+	  float: none;
+	  width: 100%;
+	  height: auto;
+	  text-align: center;
+	}
 
-#icon, img{
-	max-width: 600px;
-	margin-right: auto;
-	margin-left:auto;
-  height: auto;
-}
+	#icon, img{
+		max-width: 600px;
+		margin-right: auto;
+		margin-left:auto;
+	  height: auto;
+	}
 
-#icon, p{
-	font-size: 2em;
-	margin-top: 15px;
-	text-align: center;
-}
+	#icon, p{
+		font-size: 2em;
+		margin-top: 15px;
+		text-align: center;
+	}
 
-.clear{
-	clear:both;
-}
+	.clear{
+		clear:both;
+	}
 
-#email{
-	font-family: 'Josefin Sans', sans-serif;
-	text-align: center;
-	margin-bottom: 50px;
-	font-size: 3em;
-}
+	#email{
+		font-family: 'Josefin Sans', sans-serif;
+		text-align: center;
+		margin-bottom: 50px;
+		font-size: 3em;
+	}
 
-#board{
-	text-align: center;
-}
+	#board{
+		text-align: center;
+	}
 
-.board-member{
-	width: auto;
-	background-color: #F6E6A6;
-	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
-	margin-left: 0em;
-	margin-right: 0em;
-	font-size: 180%;
+	.board-member{
+		width: auto;
+		background-color: #F6E6A6;
+		text-align: center;
+		font-family: 'Josefin Sans', sans-serif;
+		margin-left: 0em;
+		margin-right: 0em;
+		font-size: 180%;
+	}
 }
