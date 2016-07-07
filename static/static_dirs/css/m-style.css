@@ -57,11 +57,6 @@ form{
 	padding: 10px;
 }
 
-.three.columns {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
 }
 #icon {
   display: block;
@@ -71,13 +66,15 @@ form{
   text-align: center;
 }
 
-.icon, img{
-	max-width: 400px;
+#icon, img{
+	max-width: 600px;
+	margin-right: auto;
+	margin-left:auto;
   height: auto;
 }
 
-.icon, p{
-	font-size: 4em;
+#icon, p{
+	font-size: 2em;
 	margin-top: 15px;
 	text-align: center;
 }
@@ -85,7 +82,6 @@ form{
 .clear{
 	clear:both;
 }
-
 
 #email{
 	font-family: 'Josefin Sans', sans-serif;
