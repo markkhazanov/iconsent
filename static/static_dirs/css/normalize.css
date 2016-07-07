@@ -132,10 +132,10 @@ dfn {
  * contexts in Firefox 4+, Safari, and Chrome.
  */
 
-h1 {
+/*h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
+}*/
 
 /**
  * Address styling not present in IE 8/9.
@@ -181,10 +181,10 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 
-img {
+/*img {
   border: 0;
 }
-
+*/
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */

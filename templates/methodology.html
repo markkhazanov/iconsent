@@ -1,26 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
 {% load staticfiles %}
-<h1> Methodology </h1>
 
-<div class="row">	
-	<div class="three columns">
-		<img class="icon"  src={% static "img/education.png" %} />
+
+
+<div class="page">
+
+<h1> Methodology </h1>
+	<div id="icon">
+		<img src={% static "img/education.png" %} />
 		<p><strong>Education</strong> before entering the industry in regards to worker rights, health care, and discovering personal boundaries</p>
 	</div>
 
-	<div class="three columns">
-		<img class="icon"  src={% static "img/voice.png" %} />
+	<div id="icon">
+		<img src={% static "img/voice.png" %} />
 		<p><strong>Voice</strong> when expressing concern about studios, directors, and other performers</p>
 	</div>
 
-	<div class="three columns">
-		<img class="icon"  src={% static "img/transparency.png" %} />
+	<div id="icon">
+		<img src={% static "img/transparency.png" %} />
 		<p><strong>Transparency</strong> of production studios with regards to filming practices, payment methods, performer experience, etc.</p>
 	</div>
 
-	<div class="three columns">
-		<img class="icon"  src={% static "img/consent.png" %} />
+	<div id="icon">
+		<img src={% static "img/consent.png" %} />
 		<p><strong>Consent</strong> practices that are continueous throughout production and ensure performer safety both on and off set</p>
 	</div>
 </div>

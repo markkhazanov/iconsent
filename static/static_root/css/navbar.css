@@ -1,0 +1,57 @@
+:root {
+  --main-bg-colour: #f6e6a6;
+  --main-fonts:'Josefin Sans', sans-serif;;
+}
+
+header{
+	width:100%; 
+	background:#1d1f20; 
+	opacity: 0.7;
+	height:30px; 
+	line-height:30px;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:30px;
+  padding:0px 15px 0px 15px;
+  color: #fdb837 ;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:0px 15px 0px 15px;
+  color:#fdb837 ;
+  border:0;
+  font-size:3em;
+  line-height:45px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#131313; opacity:0.8; position:absolute, left; text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff; font-family: var(--main-fonts)}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu a{text-decoration:none; color:var(--main-bg-colour);;}
+.menu a:hover{text-decoration:none; color:var(--main-bg-colour);;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}

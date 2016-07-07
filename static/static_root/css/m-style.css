@@ -1,0 +1,77 @@
+
+@media screen and (max-device-width: 480px) {
+
+body {
+
+}
+
+.logo{
+	display: block;
+	margin: auto;
+	max-width: 800px;
+	width: 80%;
+	margin-top: 10%;
+	margin-bottom: 70px;
+}
+
+p{
+	line-height: 1em;
+	text-align: left;
+	padding: 10px;
+
+}
+
+form{
+	text-align: center;
+	font-size: 20px;
+}
+
+.button{
+	background-color: orange;
+	border: 1px solid orange;
+	font-size: 40px;
+	color: white;
+	size: 200%;
+	font-family: 'Josefin Sans', sans-serif;
+	box-shadow: 0px 5px 10px gray;
+	padding: 10px;
+}
+
+.three.columns {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.icon {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 900px;
+}
+
+.icon img{
+	height: 500px;
+  width: auto;
+}
+
+.icon p{
+	font-size: 4em;
+	text-align: center;
+}
+
+.methods{
+	padding-top:100px;
+}
+
+#email{
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 3em;
+}
+
+#board{
+	text-align: center;
+}

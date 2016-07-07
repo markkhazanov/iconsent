@@ -1,4 +1,6 @@
 
+@media screen and (min-device-width: 480px){
+
 html{
 	height:100%;
 }
@@ -8,68 +10,26 @@ body{
 	padding: 0px;
 }
 
-/*.otherpage{
-	background-color: #FDF5D2; 
-	padding: 20px;
+.page{
+	max-width: 1048px;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-.homepage{
-	background: url(../img/LA.jpg) no-repeat top center; 
-	background-size: cover;
-	padding: 0px;
-}*/
 
 .logo{
 	display: block;
 	margin: auto;
-	max-width: 700px;
-	width: 80%;
+	max-width: 800px;
+	width:80%;
+	height: auto;
 	margin-top: 10%;
 	margin-bottom: 5px;
 }
 
 h1{
-	
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 250%;
-
-}
-
-
-p.title{
-	margin-right: auto;
-	margin-left: auto;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 800%;
-	margin-bottom: 20px;
-	margin-top: 50px;
-}
-
-p.introtext{
-	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
-	color: gray;
-	font-size: 220%;
-	margin-left: 1em;
-	margin-right: 1em;
-	/*max-width: 700px;*/
-	margin: 0 auto;
-	margin-bottom: 10px;
-	text-shadow: 0px 2px 1px black;
-}
-
-h2{
-	text-align: center;
-	font-family: 'Josefin Sans', sans-serif;
-	color: orange;
-	font-size: 220%;
-	margin-left: 1em;
-	margin-right: 1em;
-	/*max-width: 700px;*/
-	margin: 0 auto;
-	margin-bottom: 10px;
-	text-shadow: 0px 2px 1px gray;
 }
 
 form{
@@ -77,50 +37,15 @@ form{
 	font-size: 14px;
 }
 
-div.header{
-	text-align: right;
-}
-
-div.header a{
-	text-decoration: none;
-	font-family: 'Josefin Sans', sans-serif;
-	margin-right: 5px;
-	margin-left: 5px;
-	font-size: 120%;
-}
-
 p{
 	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
 	margin-left: 1.5em;
 	margin-right: 1.5em;
-	font-size: 180%;
+	font-size: 1.5em;
 }
 
-img.us{
-	display: block;
-	max-width: 500px;
-	margin-right: auto;
-	margin-left: auto;
-	width: auto;
-}
-
-img.board-member{
-	opacity: 0.4;
-}
-
-hr.members{
-	display: block;
-	border: 1px solid #F6E6A6;
-	/*box-shadow: 0px 10px 20px black;*/
-	background-color: black;
-	margin-left: auto;
-	margin-right: auto;
-	width: 70%;
-	margin-top: 0px;
-}
-
-hr.home{
+/*hr.home{
 	display: block;
 	border: 1px solid #F6E6A6;
 	background-color: black;
@@ -129,7 +54,15 @@ hr.home{
 	width: 50%;
 	min-width: 200px;
 	box-shadow: 0px 1px 2px gray;
+}*/
+
+#email{
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 2em;
 }
+
 
 .button{
 	background-color: orange;
@@ -141,46 +74,6 @@ hr.home{
 	box-shadow: 0px 2px 2px gray;
 }
 
-.founders{
-	background-color: gray;
-}
-
-#mark{
-	opacity: 0.6;
-	float: left;
-	margin-left: 10%;
-	margin-right: 5px;
-	width: 300px;
-}
-
-#terry{
-	opacity: 0.6;
-	float: right;
-	margin-left: 5px;
-	margin-right: 10%;
-	width: 300px;
-}
-
-#mark-text{
-	background-color: #F6E6A6;
-	opacity: 0.6;
-	float: left;
-	margin-left: 10%;
-	margin-right: 5px;
-	width: 300px;
-	height: 150px;
-}
-
-#terry-text{
-	background-color: #F6E6A6;
-	opacity: 0.6;
-	float: right;
-	margin-left: 5px;
-	margin-right: 10%;
-	width: 300px;
-	height: 150px;
-}
-
 #board{
 	clear:both;
 }
@@ -188,17 +81,27 @@ hr.home{
 .board-member{
 	width: auto;
 	background-color: #F6E6A6;
-	text-align: none;
+	text-align: center;
 	font-family: 'Josefin Sans', sans-serif;
 	margin-left: 0em;
 	margin-right: 0em;
 	font-size: 180%;
 }
 
-img.icon{
-	display: block;
-	max-height: 200px;
-	margin-right: auto;
-	margin-left: auto;
-	width: auto;
+#icon{
+	float: left;
+	max-width: 25%;
+	text-align:center;
+}
+
+#icon, img{
+	height: 200px;
+  width: auto;
+  text-align: center;
+}
+
+#icon, p{
+	margin-top: 15px;
+	text-align: center;
+}
 }
