@@ -2,22 +2,22 @@
 
 header{
 	width:100%; 
-	background:#1d1f20; 
+	background:none; 
 	opacity: 0.7;
-	height:80px; 
+	height:120px; 
 	line-height:30px;
 }
 
 .hamburger{
   background:none;
   position:absolute;
-  top:25px;
+  top:40px;
   right:0;
   line-height:30px;
   padding:0px 15px 0px 15px;
   color: #fdb837 ;
   border:0;
-  font-size:3.5em;
+  font-size:5em;
   font-weight:bold;
   cursor:pointer;
   outline:none;
@@ -26,17 +26,19 @@ header{
 .cross{
   background:none;
   position:absolute;
-  top:35px;
+  top:60px;
   right:10px;
   padding:0px 15px 0px 15px;
   color:#fdb837 ;
   border:0;
-  font-size:8em;
+  font-size:10em;
   line-height:45px;
   font-weight:bold;
   cursor:pointer;
   outline:none;
   z-index:10000000000000;
 }
+
+
 
 }

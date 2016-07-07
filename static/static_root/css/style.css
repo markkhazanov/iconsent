@@ -1,4 +1,6 @@
 
+@media screen and (min-device-width: 480px){
+
 html{
 	height:100%;
 }
@@ -8,11 +10,19 @@ body{
 	padding: 0px;
 }
 
+.page{
+	margin-top: 10%;
+	max-width: 1048px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .logo{
 	display: block;
 	margin: auto;
-	max-width: 700px;
-	width: 80%;
+	max-width: 800px;
+	width:80%;
+	height: auto;
 	margin-top: 10%;
 	margin-bottom: 5px;
 }
@@ -33,7 +43,7 @@ p{
 	font-family: 'Josefin Sans', sans-serif;
 	margin-left: 1.5em;
 	margin-right: 1.5em;
-	font-size: 180%;
+	font-size: 1.5em;
 }
 
 /*hr.home{
@@ -79,15 +89,20 @@ p{
 	font-size: 180%;
 }
 
-.icon{
-	display: block;
-	max-height: 200px;
+#icon{
 	float: left;
-	width: 25%;
+	max-width: 25%;
 	text-align:center;
 }
 
-.icon img{
-	height: 200px;
-  width: auto;
+#icon, img{
+  max-width: 200px;
+  height: auto;
+  text-align: center;
+}
+
+#icon, p{
+	margin-top: 15px;
+	text-align: center;
+}
 }
