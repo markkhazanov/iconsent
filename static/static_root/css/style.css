@@ -1,17 +1,12 @@
 
 @media screen and (min-device-width: 480px){
 
-html{
-	height:100%;
-}
-
 body{
 	background-color: #FDF5D2;
 	padding: 0px;
 }
 
 .page{
-	margin-top: 10%;
 	max-width: 1048px;
 	margin-left: auto;
 	margin-right: auto;
@@ -79,7 +74,7 @@ p{
 	clear:both;
 }
 
-.board-member{
+.board-member p{
 	width: auto;
 	background-color: #F6E6A6;
 	text-align: center;
@@ -89,20 +84,24 @@ p{
 	font-size: 180%;
 }
 
-#icon{
+/*#icon{
 	float: left;
 	max-width: 25%;
 	text-align:center;
 }
 
-#icon, img{
+#icon img{
   max-width: 200px;
   height: auto;
-  text-align: center;
+}*/
+
+.methodtext{
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	margin-left: 0em;
+	margin-right: 0em;
+	font-size: 180%;
+	margin-top: 15px;
 }
 
-#icon, p{
-	margin-top: 15px;
-	text-align: center;
-}
 }
