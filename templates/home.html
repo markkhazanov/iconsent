@@ -1,23 +1,186 @@
 {% extends "base.html" %}
 {% block content %}
 {% load staticfiles %}
-<div class="page">
-<!--<p class="title"> ICON(<strong>SENT</strong>) </p> -->
-<img class="logo"  src={% static "img/logo_v2.png" %} />
-<!--<h2> Let's talk porn. </h2>-->
-
-
-
+<!-- <div class="page">
+<p class="title"> ICON(<strong>SENT</strong>) </p> -->
+<!-- <img class="logo"  src={% static "img/logo_v2.png" %} />
+<h2> Let's talk porn. </h2>-->
+<!-- 
 <p> ICON(sent) Entertainment Technologies is leading the way in software development for pornographic content providers. Our mission is to ensure that all peoples featured in widely distributed pornography are fully consenting individuals.
 </p>
 
 <form method="POST" action="">
 {% csrf_token %}
 <div id="email">{{ form }}</div>
-<input type="submit" value='Stay Updated' class='btn btn-primary button' />
+<input type="submit" value='Stay Updated' 	class='btn btn-primary button' />
 </form>
 
 </div>
+ -->
+
+<a name="intro">
+<div class="container section intro">
+	<div class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="logoImage">
+					<img class="logo" src={% static "img/logo1.png" %} />
+					<img class="logo" src={% static "img/logo2.png" %} />
+					<img class="logo" src={% static "img/logo3.png" %} />
+					<img class="logo" src={% static "img/logo4.png" %} />
+					<img class="logo" src={% static "img/logo5.png" %} />
+					<img class="logo" src={% static "img/logo6.png" %} />
+					<img class="logo" src={% static "img/logo7.png" %} />
+					<img class="logo" src={% static "img/logo8.png" %} />
+				</div>
+				<p> <strong>ICON(sent) Entertainment Technologies </strong> is leading the way in <strong> software development </strong> for the <strong> adult entertainment industry </strong>. Our mission is to ensure that all peoples featured in widely distributed pornography are <strong>fully consenting individuals </strong>. </p>
+
+				<div class="subscribe">
+					<form method="POST" action="">
+					{% csrf_token %}
+					<div id="email">{{ form }}</div>
+					<input type="submit" value='Stay Updated' class='button' />
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+</a>
+
+<a name="about">
+<div class="container section about">
+	<div class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<h1> About </h1>
+				<p> ICON(sent) Entertainment Technologies started with the question of how prevalent is affirmative consent within the pornography industry. We found many examples of highly robust frameworks for gaining actor and actress consent, but as we began to reach out to smaller fringe producers we noticed that they were struggling to do anything more for their performers than the bare minimum.
+				<br>
+				<br>
+				Producers wanted to attract more talent and keep their performers happy. Performers wanted greater information about consent practices at production companies. We soon discovered that an overwhelming majority of pornography users also wanted the gaurantee that their favorite actors/actresses were receiving proper treatment both on and off set.
+				<br>
+				<br>
+				Currently we are working with producers, performers, distributors, and pornography users to develop technologies that can easily be incorporated into the production and distribution process of the adult entertainment industry. We hope you join us on our journey!</p>
+			</div>
+		</div>
+	</div>
+</div>
+</a>
+
+
+<a name="methodology">
+<div class="container section methodology">
+	<div class="content">
+		<div class="row">
+			<div class="col-md-12 hideme">
+				<h1> Methodology </h1>
+					<div class="row">
+						<div class="col-md-3 icon1 icon">
+							<img class="iconimg" src='{% static "img/education.png" %}'>
+							<h2> Education </h2>
+							<p> before entering the industry in regards to worker rights, health care, and discovering personal boundaries </p>
+						</div>
+						<div class="col-md-3 icon2 icon">
+							<img class="iconimg" src='{% static "img/voice.png" %}'>
+							<h2> Voice </h2>
+							<p> when expressing concern about studios, directors, and other performers</p>
+						</div>
+						<div class="col-md-3 icon3 icon">
+							<img class="iconimg" src='{% static "img/transparency.png" %}'>
+							<h2> Transparency </h2>
+							<p>  of production studios with regards to filming practices, payment methods, performer experience, etc. </p>
+						</div>
+						<div class="col-md-3 icon4 icon">
+							<img class="iconimg" src='{% static "img/consent.png" %}'>
+							<h2> Consent </h2>
+							<p> practices that are continueous throughout production and ensure performer safety both on and off set </p>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+</a>
+
+
+<a name="advisors">
+<div class="container section advisors">
+	<div class="content">
+		<h1> Board of Advisors </h1>
+
+		<div class="row">
+			<div class="col-md-4">
+				<img class="iconimg" src='{% static "img/board_icons/1producers.png" %}'>
+				<div class="boardmember"> Pornography Producers </div>
+			</div>
+			<div class="col-md-4">
+				<img class="iconimg" src='{% static "img/board_icons/2psychologists.png" %}'>
+				<div class="boardmember"> Sex Psychologists</div>
+			</div>
+			<div class="col-md-4">
+				<img class="iconimg" src='{% static "img/board_icons/3analyst.png" %}'>
+				<div class="boardmember"> Data Analysts</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<img class="iconimg" src='{% static "img/board_icons/4performer.png" %}'>
+				<div class="boardmember"> Performers </div>
+			</div>
+			<div class="col-md-4">
+				<img class="iconimg" src='{% static "img/board_icons/5banana.png" %}'>
+				<div class="boardmember"> Sex Health & Education Specialists</div>
+			</div>
+			<div class="col-md-4">
+				<img class="iconimg" src='{% static "img/board_icons/6legal.png" %}'>
+				<div class="boardmember"> Legal Professionals Specializing in Online Pornographic Content</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<img class="iconimg" src='{% static "img/board_icons/7distribution.png" %}'>
+				<div class="boardmember"> Distribution Platforms </div>
+			</div>
+			<div class="col-md-4">
+				<img class="iconimg" src='{% static "img/board_icons/8entrepreneurs.png" %}'>
+				<div class="boardmember"> Technology Entrepreneurs</div>
+			</div>
+			<div class="col-md-4">
+				<img class="iconimg" src='{% static "img/board_icons/9filmmakers.png" %}'>
+				<div class="boardmember"> Documentary Film Makers</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</a>
+
+<a name="contact">
+<div class="container section contact">
+	<div class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<h1> Contact </h1>
+				<p> Reach out to us with ideas, stories, potential partnerships, or if you're interested in helping out. Pornography and sex work are highly controversial industries and often emotionally charged. More so than almost any other industry, pornography deals with incredibly nuanced and complex components and has touched many lives in both positive and negative ways. Please be courteous in your messages and we will gladly respond to any and all inquiries no matter the content. </p>
+
+				<h2> mark@icon-sent.com </h2>
+			</div>
+		</div>
+	</div>
+</div>
+</a>
+
+<div class="container footer">
+	<div class="follow">
+		<a href="https://twitter.com/icon_sent" target="_blank"><img src='{% static "img/twitter.png" %}'></a>
+		<img src='{% static "img/facebook-logo.png" %}'>
+		<img src='{% static "img/instagram-logo.png" %}'>
+	</div>
+</div>
+
 {% endblock %}
 
 

@@ -4,40 +4,137 @@
 <head>
 {% load staticfiles %}
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="{% static 'js/navbar.js' %}"></script>
 
 <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" type="text/css" href="{% static 'css/navbar.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'css/m-navbar.css' %}" />
-<!-- <link rel="stylesheet" type="text/css" href="{% static 'css/skeleton.css' %}" /> -->
-<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}" />
+<! <link rel="stylesheet" type="text/css" href="{% static 'css/skeleton.css' %}" /> -->
+<!-- <link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'css/m-style.css' %}" />
+ -->
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.2.0/scrollreveal.min.js"></script>
+
+	<style>
+		.sr .icon{ visibility: hidden;}
+		.sr .logoImage{ visibility: hidden;}
+	</style>
+
+	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+<!-- 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="scripts/imagesloaded.pkgd.min.js"></script>
+	<script src="scripts/hammer.min.js"></script>
+	<script src="scripts/sequence.min.js"></script>
+	<script src="scripts/sequence-theme.basic.js"></script>
+
+	<link rel="stylesheet" href="{% static 'css/parallax.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 
 
 </head>
 <body>
-	<header>
-	  <button class="hamburger">&#9776;</button>
-	  <button class="cross">&#735;</button>
-	</header>
 
-	<div class="menu">
-	  <ul>
-	    <a href="{% url 'home' %}"><li>Home</li></a>
-			<a href="{% url 'about' %}"><li>About</li></a>
-			<a href="{% url 'methodology' %}"><li>Methodology</li></a>
-			<a href="{% url 'advisors' %}"><li>Members</li></a>
-			<a href="{% url 'contact' %}"><li>Contact Us</li></a>
-	  </ul>
-	</div> 
+<nav class="navbar navbar-default header">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#home" class="smoothScroll navbar-brand">
+			<img class="headerLogo"  src={% static "img/logo_v2_white.png" %} /></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse header" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav row">
+        <li class="">
+        		<a href="#intro" class="smoothScroll">home</a>
+					<span class="sr-only">(current)</span>
+				</li>
+				<li class="">
+        		<a href="#about" class="smoothScroll">about</a>
+					<span class="sr-only">(current)</span>
+				</li>
+				<li class="">
+        	<a href="#methodology" class="smoothScroll">methodology</a>
+					<span class="sr-only">(current)</span>
+				</li>
+				<li class="">
+        	<a href="#advisors" class="smoothScroll">advisors</a>
+					<span class="sr-only">(current)</span>
+				</li>
+				<li class="">
+        	<a href="#contact" class="smoothScroll">contact</a>
+					<span class="sr-only">(current)</span>
+				</li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
 
 {% block content %}
 
 {% endblock %}
 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="{% static 'js/smoothscroll.js' %}"></script>
+		<script type="text/javascript" src="{% static 'js/changeLogo.js' %}"></script>
+
+
 </body>
+
+<script src="{% static 'js/jquery-1.10.2.min.js' %}"></script>
+<script src="{% static 'js/jquery.parallax.min.js' %}"></script>
+
+<script type="text/javascript">
+	$(function(){
+		$('#scene').parallax();
+	});
+</script>
+
+
+
+<script>
+	window.sr = ScrollReveal();
+	sr.reveal('.logoImage', {duration: 5000});
+
+	sr.reveal('.icon', {
+		delay: 300
+	});
+
+</script>
+
+
 </html>
 

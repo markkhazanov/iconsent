@@ -33,6 +33,7 @@ def home(request):
 		obj = None
 
 	form = JoinForm(request.POST or None)
+
 	if form.is_valid():
 		new_join = form.save(commit=False)
 		email = form.cleaned_data['email']
@@ -46,25 +47,26 @@ def home(request):
 			return HttpResponseRedirect("")
 	context = {"form": form}
 	template = "home.html"
+	form.errors['email'] = form.error_class()
 	return render(request, template, context)
 
-def about(request):
-	context = {}
-	template = "about.html"
-	return render(request, template, context)
+# def about(request):
+# 	context = {}
+# 	template = "about.html"
+# 	return render(request, template, context)
 
-def methodology(request):
-	context = {}
-	template = "methodology.html"
-	return render(request, template, context)
+# def methodology(request):
+# 	context = {}
+# 	template = "methodology.html"
+# 	return render(request, template, context)
 
-def advisors(request):
-	context = {}
-	template = "advisors.html"
-	return render(request, template, context)
+# def advisors(request):
+# 	context = {}
+# 	template = "advisors.html"
+# 	return render(request, template, context)
 
-def contact(request):
-	context = {}
-	template = "contact.html"
-	return render(request, template, context)
+# def contact(request):
+# 	context = {}
+# 	template = "contact.html"
+# 	return render(request, template, context)
 

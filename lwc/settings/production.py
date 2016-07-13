@@ -60,7 +60,7 @@ LOGGING = {
         # Your own app - this assumes all your logger names start with "myapp."
         'joins': {
             'handlers': ['console'],
-            'level': 'DEBUG', # Or maybe INFO or WARNING
+            'level': 'DEBUG', # Or maybe INFO or WARNING or DEBUG
             'propagate': False
         },
     },
