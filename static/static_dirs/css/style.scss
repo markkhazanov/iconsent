@@ -43,7 +43,7 @@ body{
 	background-color:$background_color;
 }
 
-	@media screen and (max-width: 500px){
+	@media screen and (max-width: 767px){
 		ul{
 			text-align: center;
 			margin-right:auto;
@@ -218,7 +218,7 @@ a:focus, a:hover{
 	@media screen and (max-width: 500px) {
     p{
     	line-height: 1.8em;
-    	text-align:left;
+    	text-align:justify;
     	margin-left:10px;
     	margin-right:10px;
     }
@@ -266,7 +266,7 @@ a:focus, a:hover{
 	
 	@media screen and (max-width: 500px) {
 	    p{
-	    	text-align: left;
+	    	text-align: justify;
 	    	margin-left:10px;
 	    	margin-right:10px;
 	    }
@@ -330,7 +330,7 @@ a:focus, a:hover{
 	background-size: cover;
 		@media screen and (max-width: 500px) {
 			p{
-				text-align: left;
+				text-align: justify;
   			margin-right: 10px;
 				margin-left: 10px;
 				margin-bottom: 30px;
