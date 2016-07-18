@@ -168,7 +168,7 @@ a:focus, a:hover {
   @media screen and (max-width: 500px) {
     .intro p {
       line-height: 1.8em;
-      text-align: justify;
+      text-align: left;
       margin-left: 10px;
       margin-right: 10px; } }
 
@@ -204,7 +204,7 @@ a:focus, a:hover {
     margin-left: auto; }
   @media screen and (max-width: 500px) {
     .about p {
-      text-align: justify;
+      text-align: left;
       margin-left: 10px;
       margin-right: 10px; } }
 
@@ -251,7 +251,7 @@ a:focus, a:hover {
     margin-bottom: 35px; }
   @media screen and (max-width: 500px) {
     .contact p {
-      text-align: justify;
+      text-align: left;
       margin-right: 10px;
       margin-left: 10px;
       margin-bottom: 30px; } }
